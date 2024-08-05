@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results retried="1" ignored="0" total="4" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-08-05T14:57:06 IST" name="Default suite" finished-at="2024-08-05T14:58:01 IST" duration-ms="54579">
+    <groups>
+      <group name="orderverify">
+        <method signature="T1.orderverify(java.lang.String,java.lang.String)[pri:0, instance:FrameWork.test_cases.T1@5b8dfcc1]" name="orderverify" class="FrameWork.test_cases.T1"/>
+      </group> <!-- orderverify -->
+      <group name="purchase">
+        <method signature="T1.purchase(java.util.HashMap)[pri:0, instance:FrameWork.test_cases.T1@5b8dfcc1]" name="purchase" class="FrameWork.test_cases.T1"/>
+      </group> <!-- purchase -->
+    </groups>
+    <test started-at="2024-08-05T14:57:06 IST" name="Default test" finished-at="2024-08-05T14:58:01 IST" duration-ms="54579">
+      <class name="FrameWork.test_cases.T1">
+        <test-method is-config="true" signature="applaunch()[pri:0, instance:FrameWork.test_cases.T1@5b8dfcc1]" started-at="2024-08-05T14:57:06 IST" name="applaunch" finished-at="2024-08-05T14:57:12 IST" duration-ms="5891" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- applaunch -->
+        <test-method signature="purchase(java.util.HashMap)[pri:0, instance:FrameWork.test_cases.T1@5b8dfcc1]" started-at="2024-08-05T14:57:12 IST" name="purchase" data-provider="getdata" finished-at="2024-08-05T14:57:28 IST" duration-ms="15649" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{product2=IPHONE 13 PRO, product1=ZARA COAT 3, password=87622@Mv, email=ms.vilaspure@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- purchase -->
+        <test-method is-config="true" signature="close()[pri:0, instance:FrameWork.test_cases.T1@5b8dfcc1]" started-at="2024-08-05T14:57:28 IST" name="close" finished-at="2024-08-05T14:57:28 IST" duration-ms="165" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="applaunch()[pri:0, instance:FrameWork.test_cases.T1@5b8dfcc1]" started-at="2024-08-05T14:57:28 IST" name="applaunch" finished-at="2024-08-05T14:57:31 IST" duration-ms="2444" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- applaunch -->
+        <test-method retried="true" signature="purchase(java.util.HashMap)[pri:0, instance:FrameWork.test_cases.T1@5b8dfcc1]" started-at="2024-08-05T14:57:31 IST" name="purchase" data-provider="getdata" finished-at="2024-08-05T14:57:36 IST" duration-ms="5219" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{product2=IPHONE 13 PRO, product1=ZARA COAT 3, password=87622@Mv, email=ms.vilaspure@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.IndexOutOfBoundsException">
+            <message>
+              <![CDATA[Index 1 out of bounds for length 1]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IndexOutOfBoundsException: Index 1 out of bounds for length 1
+at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:100)
+at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:106)
+at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:302)
+at java.base/java.util.Objects.checkIndex(Objects.java:385)
+at java.base/java.util.ArrayList.get(ArrayList.java:427)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy19.get(Unknown Source)
+at pageObjects.Products.verify(Products.java:121)
+at FrameWork.test_cases.T1.purchase(T1.java:53)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IndexOutOfBoundsException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- purchase -->
+        <test-method is-config="true" signature="close()[pri:0, instance:FrameWork.test_cases.T1@5b8dfcc1]" started-at="2024-08-05T14:57:36 IST" name="close" finished-at="2024-08-05T14:57:36 IST" duration-ms="128" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="applaunch()[pri:0, instance:FrameWork.test_cases.T1@5b8dfcc1]" started-at="2024-08-05T14:57:36 IST" name="applaunch" finished-at="2024-08-05T14:57:38 IST" duration-ms="2541" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- applaunch -->
+        <test-method signature="purchase(java.util.HashMap)[pri:0, instance:FrameWork.test_cases.T1@5b8dfcc1]" started-at="2024-08-05T14:57:38 IST" name="purchase" data-provider="getdata" finished-at="2024-08-05T14:57:53 IST" duration-ms="14696" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{product2=IPHONE 13 PRO, product1=ZARA COAT 3, password=87622@Mv, email=ms.vilaspure@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- purchase -->
+        <test-method is-config="true" signature="close()[pri:0, instance:FrameWork.test_cases.T1@5b8dfcc1]" started-at="2024-08-05T14:57:53 IST" name="close" finished-at="2024-08-05T14:57:53 IST" duration-ms="123" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="applaunch()[pri:0, instance:FrameWork.test_cases.T1@5b8dfcc1]" started-at="2024-08-05T14:57:53 IST" name="applaunch" finished-at="2024-08-05T14:57:57 IST" duration-ms="3419" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- applaunch -->
+        <test-method signature="orderverify(java.lang.String,java.lang.String)[pri:0, instance:FrameWork.test_cases.T1@5b8dfcc1]" started-at="2024-08-05T14:57:57 IST" name="orderverify" data-provider="orderverify" finished-at="2024-08-05T14:58:00 IST" depends-on-methods="FrameWork.test_cases.T1.purchase" duration-ms="3802" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ms.vilaspure@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[87622@Mv]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- orderverify -->
+        <test-method is-config="true" signature="close()[pri:0, instance:FrameWork.test_cases.T1@5b8dfcc1]" started-at="2024-08-05T14:58:00 IST" name="close" finished-at="2024-08-05T14:58:01 IST" duration-ms="76" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- FrameWork.test_cases.T1 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
