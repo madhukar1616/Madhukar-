@@ -16,7 +16,7 @@ public class InvalidLogin extends BaseTest{
 		
 		t.loginmethod("madhu@gmail.com", "87622");
 		Assert.assertEquals("Incorrect email or password.", t.invlaidlogin());
-		System.out.println("Logged in");
+		System.out.println("Logged in successfully lets move now");
 		
 	
 	} 
